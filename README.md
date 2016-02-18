@@ -2,4 +2,4 @@
 
 [Travel Application using Watson Tradeoff Analytics](/flightstradeoffanalytics)
 
-[Watson Visual Recognition demo](/watsonvisualrecognition)
+[Watson Visual Recognition Demo](/watsonvisualrecognition)
