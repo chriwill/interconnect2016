@@ -4,4 +4,4 @@
 
 ![Alt text](images/catalog.png "Bluemix -> Catalog")
 
-![Alt text](images/bluemix_catalog_node_red.png "Bluemix -> Catalog")
+![Alt text](images/bluemix_catalog_node_red.jpg "Bluemix -> Catalog")
