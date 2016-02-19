@@ -9,7 +9,7 @@ Once you're logged in to your Bluemix account go to 'Catalog' and click on the '
 
 On the right side of the screen you must give it a name, which must be unique. Then click 'Create'. Right now the Node-RED application is being created and deployed. This will take a few minutes.
 
-<img src="images/Bluemix_Catalog_Node_RED_Create.png" width="450">
+<img src="images/Bluemix_Catalog_Node_RED_Create.png" width="250">
 
 
 2.) Add Service Tradeoff Analytics
