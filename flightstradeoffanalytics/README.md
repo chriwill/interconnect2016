@@ -28,7 +28,15 @@ Next it will ask to restage the application to use the newly added service, clic
 
 <img src="images/Bluemix_Restage_Application.png" width="250">
 
+3.) Start using Node-RED application
 
+Once restaging is complete, click on the link to open the Node-RED application.
+
+<img src="images/Node_RED_is_running.png" width="250">
+
+Go to your Node-RED flow editor.
+
+<img src="images/Node_RED_flow_editor.png" width="250">
 
 
 
