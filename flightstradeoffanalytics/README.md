@@ -44,6 +44,13 @@ Click on 'Go to your Node-RED flow editor'.
 
 4.) Create Application Flow
 
+4.1) Create Input - HTTP Request
+
+4.2) Create Output - HTTP Response
+
+4.3) Add Function & Template to first row
+
+4.4) Define Function to supply the Flight data
 
 
 
