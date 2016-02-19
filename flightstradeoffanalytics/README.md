@@ -12,13 +12,13 @@ On the right side of the screen you must give it a name, which must be unique. T
 
 Staging will take a few minutes.
 
-<img src="images/Bluemix_Stagging_Node_RED.png" width="250">
+<img src="images/Bluemix_Staging_Node_RED.png" width="250">
 
 2.) Add Service Watson Tradeoff Analytics
 
 Once Node-RED application staging completed, go to Catalog and search for 'Tradeoff Analytics'.
 
-<img src="images/Bluemix_Staging_Node_RED.png" width="250">
+<img src="images/Bluemix_Catalog_Tradeoff_Analytics" width="250">
 
 
 
