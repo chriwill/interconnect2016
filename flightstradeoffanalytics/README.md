@@ -2,8 +2,15 @@
 
 [Sample Flight Data](https://raw.githubusercontent.com/chriwill/interconnect2016/master/flightstradeoffanalytics/data/flightdata.json)
 
-<img src="images/Bluemix_Catalog_Tradeoff_Analytics.png" width="500">
+1.) Add Service Tradeoff Analytics
+- Go to Catalog, search for Tradeoff
 
-<img src="images/Bluemix_Catalog_Node_RED.png" width="400">
+<img src="images/Bluemix_Catalog_Tradeoff_Analytics.png" width="450">
+
+
+2.) Create Node-RED Application
+- Go to Catalog, search for Node-RED
+
+<img src="images/Bluemix_Catalog_Node_RED.png" width="450">
 
 
