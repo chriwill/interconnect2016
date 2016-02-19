@@ -10,9 +10,9 @@ On the right side of the screen you must give it a name, which must be unique. T
 
 <img src="images/Bluemix_Catalog_Node_RED_Create.png" width="250">
 
+2.) Add Service Watson Tradeoff Analytics
 
-2.) Add Service Tradeoff Analytics
-- Go to Catalog, search for Tradeoff
+Once Node-RED application staging completed, go to Catalog and search for 'Tradeoff Analytics'.
 
 <img src="images/Bluemix_Catalog_Tradeoff_Analytics.png" width="450">
 
