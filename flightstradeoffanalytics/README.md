@@ -43,6 +43,7 @@ Click on 'Go to your Node-RED flow editor'.
 
 
 
-X.)
+
+X.) Add Sample Flight Data
 
 [Sample Flight Data](https://raw.githubusercontent.com/chriwill/interconnect2016/master/flightstradeoffanalytics/data/flightdata.json)
