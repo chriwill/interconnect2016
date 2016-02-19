@@ -18,7 +18,7 @@ Staging will take a few minutes.
 
 Once Node-RED application staging completed, go to Catalog and search for 'Tradeoff Analytics'.
 
-<img src="images/Bluemix_Catalog_Tradeoff_Analytics" width="250">
+<img src="images/Bluemix_Catalog_Tradeoff_Analytics.png" width="250">
 
 
 
