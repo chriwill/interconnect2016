@@ -2,7 +2,7 @@
 
 Overview:
 
-<img src="images/Node_RED_Overview.png" align="middle" width="450" title="Overview">
+<img src="images/Node_RED_Overview.png" align="middle" width="750" title="Overview">
 
 1.) Create Node-RED Application on Bluemix
 
