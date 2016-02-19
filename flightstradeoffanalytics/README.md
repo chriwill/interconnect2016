@@ -47,9 +47,10 @@ Click on 'Go to your Node-RED flow editor'.
 4.1) Create Input - HTTP Request
 
 <img src="images/NR_Create_Input.png" width="400">
-<img src="images/NR_Modify_Input1.png" width="200">
-<img src="images/NR_Modify_Input2.png" width="200">
-<img src="images/NR_Modify_Input3.png" width="200">
+
+<img src="images/NR_Modify_Input1.png" width="250">
+<img src="images/NR_Modify_Input2.png" width="250">
+<img src="images/NR_Modify_Input3.png" width="250">
 
 4.2) Create Output - HTTP Response
 
