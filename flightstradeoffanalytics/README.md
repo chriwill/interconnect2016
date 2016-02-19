@@ -4,7 +4,7 @@
 
 1.) Create Node-RED Application on Bluemix
 
-Once you're logged in to your Bluemix account go to 'Catalog' and click on the 'Node-RED starter' application. 
+Once you're logged in to your Bluemix account go to 'Catalog' and click on the 'Node-RED Starter Community' application. 
 
 <img src="images/Bluemix_Catalog_Node_RED.png" width="450">
 
