@@ -54,7 +54,14 @@ Click on 'Go to your Node-RED flow editor'.
 
 4.2) Create Output - HTTP Response
 
+<img src="images/NR_Create_Output.png" width="700">
+
 4.3) Add Function & Template to first row
+
+<img src="images/NR_Add_Function_and_Template.png" width="150">
+
+<img src="images/NR_Add_Function_and_Template2.png" width="500">
+<img src="images/NR_Connect_Function_and_Template.png" width="500">
 
 4.4) Define Function to supply the Flight data
 
