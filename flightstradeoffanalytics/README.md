@@ -1,7 +1,5 @@
 # Using the Trade-Off Analytics Widget with Node-RED to analyze Flight options
 
-[Sample Flight Data](https://raw.githubusercontent.com/chriwill/interconnect2016/master/flightstradeoffanalytics/data/flightdata.json)
-
 1.) Create Node-RED Application on Bluemix
 
 Once you're logged in to your Bluemix account go to 'Catalog' and click on the 'Node-RED Starter Community' application. 
@@ -19,3 +17,6 @@ On the right side of the screen you must give it a name, which must be unique. T
 <img src="images/Bluemix_Catalog_Tradeoff_Analytics.png" width="450">
 
 
+
+
+[Sample Flight Data](https://raw.githubusercontent.com/chriwill/interconnect2016/master/flightstradeoffanalytics/data/flightdata.json)
