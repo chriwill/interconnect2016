@@ -16,11 +16,18 @@ Staging will take a few minutes.
 
 2.) Add Service Watson Tradeoff Analytics
 
-Once Node-RED application staging completed, go to Catalog and search for 'Tradeoff Analytics'.
+Once Node-RED application staging completed, go back to Catalog and search for 'Tradeoff Analytics' and click on the application icon.
 
 <img src="images/Bluemix_Catalog_Tradeoff_Analytics.png" width="350">
 
+On the next page bind the service to our previously created Node-RED application and click 'Create'.
+
+<img src="images/Bluemix_Catalog_Tradeoff_Create.png" width="350">
 
 
+
+
+
+X.)
 
 [Sample Flight Data](https://raw.githubusercontent.com/chriwill/interconnect2016/master/flightstradeoffanalytics/data/flightdata.json)
