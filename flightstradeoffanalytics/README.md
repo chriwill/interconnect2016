@@ -3,4 +3,4 @@
 [Sample Flight Data](https://raw.githubusercontent.com/chriwill/interconnect2016/master/flightstradeoffanalytics/data/flightdata.json)
 
 ![Alt text](images/Bluemix_Catalog_Node_RED.png "Bluemix -> Catalog")
-<img src="images/Bluemix_Catalog_Node_RED.png" width="48">
+<img src="images/Bluemix_Catalog_Node_RED.png" width="300">
