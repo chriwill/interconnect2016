@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Node-RED TradeOff Analytics Widget demo</title>
+    <script type="text/javascript" src="http://ta-cdn.mybluemix.net/v1/TradeoffAnalytics.js"></script>
+    <script>
+    // get the problem object from Node-RED msg.problem
+    // note the triple-curly braces syntax to avoid HTML escaping
+    var problemObj={{{problem}}};
+    
+    // prepare client
+    var taClient;
+    
+    function loadTradeoffAnalytics() {
+		document.body.style.cursor="wait" ;
+        taClient = new TradeoffAnalytics(
+            {dilemmaServiceUrl: '{{{req._parsedUrl.pathname}}}/dilemmas',
+             analyticsEventsUrl: '{{{req._parsedUrl.pathname}}}/events'
+            }, 
+            'tofaWidget');
+        taClient.start(onTAReady);
+    }
+
+    // this is called-back when the widget is ready
+    function onTAReady() {
+        taClient.show(problemObj, onTAShown);
+    }
+
+    // this is called-back when the problem has shown in the widget
+    function onTAShown() {
+		document.body.style.cursor="default";
+        taClient.resize();
+    }
+    
+    // trigger the widget setup when window has loaded
+	window.onload=loadTradeoffAnalytics;
+</script>
+</head>
+
+<body>
+    <div id="tofaWidget" style="height:100vh"></div>
+</body>
+</html>
