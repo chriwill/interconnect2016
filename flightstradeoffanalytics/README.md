@@ -4,3 +4,5 @@
 
 ![Alt text](./images/Bluemix_Catalog_Node_RED.png =250x250)
 ![Alt text](images/Bluemix_Catalog_Node_RED.png =250x "Bluemix -> Catalog")
+
+![](images/Bluemix_Catalog_Node_RED.png =250x)
