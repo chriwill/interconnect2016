@@ -24,7 +24,7 @@ On the next page bind the service to our previously created Node-RED application
 
 <img src="images/Bluemix_Catalog_Tradeoff_Create.png" width="250">
 
-Next it will ask to restage the application because of the newly added service, click on 'RESTAGE'.
+Next it will ask to restage the application to use the newly added service, click on 'RESTAGE'.
 
 <img src="images/Bluemix_Restage_Application.png" width="250">
 
