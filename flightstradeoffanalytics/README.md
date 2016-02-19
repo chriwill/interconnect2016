@@ -1,12 +1,14 @@
 # Using Watson Trade-Off Analytics with Node-RED to Analyze Flight Options - Step-by-Step Guide
 
-<img src="images/Node_RED_Overview.png" align="middle" width="450">
+Overview:
+
+<img src="images/Node_RED_Overview.png" align="middle" width="450" title="Overview">
 
 1.) Create Node-RED Application on Bluemix
 
 Once you're logged in to your Bluemix account go to 'Catalog' and click on the 'Node-RED Starter Community' application. 
 
-<img src="images/Bluemix_Catalog_Node_RED.png" width="450">
+<img src="images/Bluemix_Catalog_Node_RED.png" align="middle" width="450">
 
 On the right side of the screen you must give it a name, which must be unique. Then click 'Create'. Right now the Node-RED application is being created and deployed.
 
