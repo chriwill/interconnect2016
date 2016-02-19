@@ -1,4 +1,4 @@
-# Using Watson Trade-Off Analytics with Node-RED to analyze flight options
+# Using Watson Trade-Off Analytics with Node-RED to Analyze Flight Options
 
 1.) Create Node-RED Application on Bluemix
 
