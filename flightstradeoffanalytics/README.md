@@ -132,9 +132,7 @@ Your application is ready to use.
 
 Go to your browser and change the URL from the Node-RED application '/red' to '/flights'.
 
-<img src="images/NR_Run_Application.png" width="550">
-
-<img src="images/NR_Run_Application2.png" width="650">
+<img src="images/NR_Run_Application3.png" width="750">
 
 
 <b>Appendix) Application flow file</b>
