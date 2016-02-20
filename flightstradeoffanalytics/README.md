@@ -95,7 +95,10 @@ What the \<script> section does is to:
   - On the TAReady event notification, we invoke `show(problem)`.  This will cause the widget to call-back on the server's `tofaw/dilemmas` URL with the problem for resolution.
   - Once the data has come back from the dilemmas server, the widget shows the problem and triggers onTAShown(), which is used to resize the widget to fit.
 
+
+
 <div style="text-align:center">
+
 4.6) Edit Processing Row 
 
 <img src="images/NR_Add_Change.png" width="100">
