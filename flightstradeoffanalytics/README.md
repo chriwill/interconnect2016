@@ -81,6 +81,16 @@ Name Template 'Create Widget'
 
 <img src="images/NR_Create_Widget.png" width="400">
 
-4.6) Next Row - Feed 
+4.6) Edit Processing Row 
+
+<img src="images/NR_Add_Change.png" width="100">
+<img src="images/NR_Add_Tradeoff.png" width="100">
+
+<img src="images/NR_After_Tradeoff.png" width="600">
+
+
+4.7) Connect Last Row
+
+<img src="images/NR_Connect_Events_HTTP.png" width="400">
 
 
