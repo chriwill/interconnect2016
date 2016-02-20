@@ -46,7 +46,7 @@ Click on 'Go to your Node-RED flow editor'.
 
 <b>4.) Trade-Off Analytics Widget flow construction</b>
 
-The flow to achieve this has three streams:
+The flow to achieve this has two streams:
 
 4.1) User-interface serving stream
 
