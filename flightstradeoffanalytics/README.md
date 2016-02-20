@@ -30,7 +30,7 @@ Once Node-RED application staging completed, go back to Catalog and search for '
 
 On the next page bind the service to our previously created Node-RED application and click 'Create'.
 
-<img src="images/Bluemix_Catalog_Tradeoff_Create.png" width="250">
+<img src="images/Bluemix_Catalog_Tradeoff_Create.png" width="350">
 
 Next it will ask to restage the application to use the newly added service, click on 'RESTAGE'.
 
