@@ -9,12 +9,15 @@ In this session you will build a travel advisor application that helps to analyz
 <b>1.) Create Node-RED Application on Bluemix</b>
 
 Once you're logged in to your Bluemix account go to 'Catalog' and click on the 'Node-RED Starter Community' application. 
+</div>
 
-<img src="images/Bluemix_Catalog_Node_RED.png" align="middle" width="450">
+<img src="images/Bluemix_Catalog_Node_RED.png" align="right" width="450">
 
+<div style="text-align:right">
 On the right side of the screen you must give it a name, which must be unique. Then click 'Create'. Right now the Node-RED application is being created and deployed.
+</dev>
 
-<img src="images/Bluemix_Catalog_Node_RED_Create.png" width="250">
+<img src="images/Bluemix_Catalog_Node_RED_Create.png"  align="left" width="250">
 
 Staging will take a few minutes.
 
@@ -86,18 +89,14 @@ Name Template 'Create Widget'
 [Widget HTML](https://raw.githubusercontent.com/chriwill/interconnect2016/master/flightstradeoffanalytics/data/widget.txt)
 
 <img src="images/NR_Create_Widget.png" align="right" width="400">
-<div style="text-align:left">
-What the \<script> section does is to:  
+
+What the \<script> section does is to:
   - Include the widget's script located at "http://ta-cdn.mybluemix.net/v1/TradeoffAnalytics.js"
   - Start the widget initialization with the `loadTradeoffAnalytics()` call, triggered by `window.onload`.  
   - This invokes the constructor, with parameters to set the dilemmas and events callback URLs, and the id of the placeholder widget's \<div>.
   - The `start()` method is called, which will asynchronously build the widget and pull its dependencies.
   - On the TAReady event notification, we invoke `show(problem)`.  This will cause the widget to call-back on the server's `tofaw/dilemmas` URL with the problem for resolution.
   - Once the data has come back from the dilemmas server, the widget shows the problem and triggers onTAShown(), which is used to resize the widget to fit.
-</div>
-
-
-
 
 
 4.6) Edit Processing Row 
