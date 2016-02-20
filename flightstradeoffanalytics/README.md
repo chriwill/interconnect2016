@@ -44,9 +44,13 @@ Click on 'Go to your Node-RED flow editor'.
 
 <img src="images/Node_RED_flow_editor.png" width="200">
 
-<b>4.) Create Application Flow</b>
+<b>4.) Trade-Off Analytics Widget flow construction</b>
 
-4.1) Create Input - HTTP Request
+The flow to achieve this has three streams:
+
+4.1) User-interface serving stream
+
+Create Input - HTTP Request
 
 <img src="images/NR_Create_Input.png" width="400">
 
@@ -81,7 +85,17 @@ Copy the data set 'Command-C' and paste it into the function definition 'Command
 Name Template 'Create Widget'
 [Widget HTML](https://raw.githubusercontent.com/chriwill/interconnect2016/master/flightstradeoffanalytics/data/widget.txt)
 
-<img src="images/NR_Create_Widget.png" width="400">
+<img src="images/NR_Create_Widget.png" align="left" width="400">
+
+What the \<script> section does is to:  
+  - Include the widget's script located at "http://ta-cdn.mybluemix.net/v1/TradeoffAnalytics.js"
+  - Start the widget initialization with the `loadTradeoffAnalytics()` call, triggered by `window.onload`.  
+  - This invokes the constructor, with parameters to set the dilemmas and events callback URLs, and the id of the placeholder widget's \<div>.
+  - The `start()` method is called, which will asynchronously build the widget and pull its dependencies.
+  - On the TAReady event notification, we invoke `show(problem)`.  This will cause the widget to call-back on the server's `tofaw/dilemmas` URL with the problem for resolution.
+  - Once the data has come back from the dilemmas server, the widget shows the problem and triggers onTAShown(), which is used to resize the widget to fit.
+
+<div align="left">
 
 4.6) Edit Processing Row 
 
