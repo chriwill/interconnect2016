@@ -56,7 +56,6 @@ Create Input - HTTP Request
 
 <img src="images/NR_Modify_Input1.png" width="250">
 <img src="images/NR_Modify_Input2.png" width="250">
-<img src="images/NR_Modify_Input3.png" width="250">
 
 4.2) Create Output - HTTP Response
 
@@ -105,14 +104,10 @@ What the \<script> section does is to:
 
 Dilemmas serving stream
 
-This flow on tofaw/dilemmas will make some parameters adjustments through a change node, setting subject, columns and options from the payload, storing the incoming problem for later use, and then calling the tradeoff analytics through its Node-RED service node. On return, another change node will adjust the returned payload parameters's problemand resolution to fit the format expected by the widget and return it as a JSON object.
+This flow on flights/dilemmas will make some parameters adjustments through a change node, setting subject, columns and options from the payload, storing the incoming problem for later use, and then calling the tradeoff analytics through its Node-RED service node. On return, another change node will adjust the returned payload parameters's problemand resolution to fit the format expected by the widget and return it as a JSON object.
 
 <img src="images/NR_Edit_Change_Input.png" width="350">
 <img src="images/NR_Edit_Change_Output.png" width="350">
-
-4.7) Connect Last Row
-
-<img src="images/NR_Connect_Events_HTTP.png" width="400">
 
 <b>5.) Run Deploy</b>
 
