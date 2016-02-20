@@ -8,4 +8,4 @@ Watson Tradeoff Analytics - Build a travel advisor application that helps to ana
 
 Watson Visual Recognition - Build a travel advisor application that recognizes the content of the image which can be used to provide more information about the destination.
 
-[Watson Visual Recognition Demo](/watsonvisualrecognition)
+[Watson Visual Recognition Demo](https://github.com/zankhanapathak/watson-visual-recognition-app)
