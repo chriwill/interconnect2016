@@ -5,15 +5,15 @@
         "format": "html",
         "id": "20046ffb.dffb9",
         "name": "Create Widget",
-        "template": "<!DOCTYPE html>\n<html>\n<head>\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\">\n    <title>Node-RED TradeOff Analytics Widget demo</title>\n    <script type=\"text/javascript\" src=\"http://ta-cdn.mybluemix.net/v1/TradeoffAnalytics.js\"></script>\n    <script>\n    // get the problem object from Node-RED msg.problem\n    // note the triple-curly braces syntax to avoid HTML escaping\n    var problemObj={{{problem}}};\n    \n    // prepare client\n    var taClient;\n    \n    function loadTradeoffAnalytics() {\n\t\tdocument.body.style.cursor=\"wait\" ;\n        taClient = new TradeoffAnalytics(\n            {dilemmaServiceUrl: '{{{req._parsedUrl.pathname}}}/dilemmas',\n             analyticsEventsUrl: '{{{req._parsedUrl.pathname}}}/events'\n            }, \n            'tofaWidget');\n        taClient.start(onTAReady);\n    }\n\n    // this is called-back when the widget is ready\n    function onTAReady() {\n        taClient.show(problemObj, onTAShown);\n    }\n\n    // this is called-back when the problem has shown in the widget\n    function onTAShown() {\n\t\tdocument.body.style.cursor=\"default\";\n        taClient.resize();\n    }\n    \n    // trigger the widget setup when window has loaded\n\twindow.onload=loadTradeoffAnalytics;\n</script>\n</head>\n\n<body>\n    <div id=\"tofaWidget\" style=\"height:100vh\"></div>\n</body>\n</html>",
+        "template": "<!DOCTYPE html>\n<html>\n<head>\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\">\n    <title>Node-RED TradeOff Analytics Widget demo</title>\n    <script type=\"text/javascript\" src=\"http://ta-cdn.mybluemix.net/v1/TradeoffAnalytics.js\"></script>\n    <script>\n    // get the problem object from Node-RED msg.problem\n    // note the triple-curly braces syntax to avoid HTML escaping\n    var problemObj={{{problem}}};\n    \n    // prepare client\n    var taClient;\n    \n    function loadTradeoffAnalytics() {\n\t\tdocument.body.style.cursor=\"wait\" ;\n        taClient = new TradeoffAnalytics(\n            {dilemmaServiceUrl: '{{{req._parsedUrl.pathname}}}/dilemmas',\n             analyticsEventsUrl: '{{{req._parsedUrl.pathname}}}/events'\n            }, \n            'flightsWidget');\n        taClient.start(onTAReady);\n    }\n\n    // this is called-back when the widget is ready\n    function onTAReady() {\n        taClient.show(problemObj, onTAShown);\n    }\n\n    // this is called-back when the problem has shown in the widget\n    function onTAShown() {\n\t\tdocument.body.style.cursor=\"default\";\n        taClient.resize();\n    }\n    \n    // trigger the widget setup when window has loaded\n\twindow.onload=loadTradeoffAnalytics;\n</script>\n</head>\n\n<body>\n    <div id=\"flightsWidget\" style=\"height:100vh\"></div>\n</body>\n</html>",
         "type": "template",
         "wires": [
             [
                 "e0c5b60d.1f3a48"
             ]
         ],
-        "x": 525.0000076293945,
-        "y": 29.499999046325684,
+        "x": 541.0000076293945,
+        "y": 46.499999046325684,
         "z": "36d96c34.c92694"
     },
     {
@@ -28,8 +28,8 @@
                 "eb10ea38.14ef18"
             ]
         ],
-        "x": 83.25,
-        "y": 31,
+        "x": 101.25,
+        "y": 47,
         "z": "36d96c34.c92694"
     },
     {
@@ -37,8 +37,8 @@
         "name": "",
         "type": "http response",
         "wires": [],
-        "x": 745,
-        "y": 29.25,
+        "x": 761,
+        "y": 46.25,
         "z": "36d96c34.c92694"
     },
     {
@@ -53,8 +53,8 @@
                 "4e9e08f6.b161f8"
             ]
         ],
-        "x": 112.75,
-        "y": 110.50000190734863,
+        "x": 128.75,
+        "y": 105.5,
         "z": "36d96c34.c92694"
     },
     {
@@ -62,8 +62,8 @@
         "name": "",
         "type": "http response",
         "wires": [],
-        "x": 745.75,
-        "y": 107.50000190734863,
+        "x": 761.75,
+        "y": 102.5,
         "z": "36d96c34.c92694"
     },
     {
@@ -75,15 +75,15 @@
                 "e51229e2.1aedd8"
             ]
         ],
-        "x": 463.75,
-        "y": 105.50000190734863,
+        "x": 479.75,
+        "y": 100.5,
         "z": "36d96c34.c92694"
     },
     {
         "action": "",
         "from": "",
         "id": "4e9e08f6.b161f8",
-        "name": "Move Input to Payload",
+        "name": "Get Data from Payload",
         "property": "",
         "reg": false,
         "rules": [
@@ -130,15 +130,15 @@
                 "36a8c120.c9573e"
             ]
         ],
-        "x": 305.00000762939453,
-        "y": 173.25000190734863,
+        "x": 310.00001525878906,
+        "y": 168.24999809265137,
         "z": "36d96c34.c92694"
     },
     {
         "action": "",
         "from": "",
         "id": "e51229e2.1aedd8",
-        "name": "Move Data from Payload",
+        "name": "Adjust Output for Widget",
         "property": "",
         "reg": false,
         "rules": [
@@ -169,8 +169,8 @@
                 "aff2dfd3.500d2"
             ]
         ],
-        "x": 633.0000076293945,
-        "y": 173.50000190734863,
+        "x": 621,
+        "y": 167.49999809265137,
         "z": "36d96c34.c92694"
     },
     {
@@ -185,33 +185,8 @@
                 "20046ffb.dffb9"
             ]
         ],
-        "x": 291.25000762939453,
-        "y": 29.500000953674316,
-        "z": "36d96c34.c92694"
-    },
-    {
-        "id": "9677da6e.698828",
-        "method": "post",
-        "name": "",
-        "swaggerDoc": "",
-        "type": "http in",
-        "url": "/flights/events",
-        "wires": [
-            [
-                "1d256043.e2daa"
-            ]
-        ],
-        "x": 101.25000381469727,
-        "y": 236.00000286102295,
-        "z": "36d96c34.c92694"
-    },
-    {
-        "id": "1d256043.e2daa",
-        "name": "",
-        "type": "http response",
-        "wires": [],
-        "x": 743.25,
-        "y": 236.49999809265137,
+        "x": 307.25000762939453,
+        "y": 46.500000953674316,
         "z": "36d96c34.c92694"
     }
 ]
