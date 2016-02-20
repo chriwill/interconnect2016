@@ -51,7 +51,7 @@ Click on 'Go to your Node-RED flow editor'.
 Our application will have two streams. The first stream is the 'User-interface', which will create the widget and supply the flight data.
 The second stream will feed the watson service with the 'Dilemmas' and will return the results to the widget create with the first stream.
 
-6) Create User-interface serving stream
+<b>Step 6) Create User-interface serving stream</b>
 
 Ever flow needs one input 'http' and one output 'http response' node. One the left side filter by 'http' and drag and drop the http node from input section on the left and also get the http response node form output section.
 
@@ -59,22 +59,15 @@ Ever flow needs one input 'http' and one output 'http response' node. One the le
 
 We need to give the input http node a url. 'Click' on the input 'http' node and enter the url '/flights'.
 
-<img src="images/NR_Create_UI2.png" width="450">
+<img src="images/NR_Create_UI2.png" width="650">
 
+Next we need to add one 'function' and one 'template' node. One the left side look under function section and drag and drop the 'function' node and 'template' node.
+Once done, connect all nodes as shown below.
 
-5.3) Add Function & Template to first row
+<img src="images/NR_Create_UI3.png" width="650">
 
-<img src="images/NR_Add_Function_and_Template.png" width="150">
-
-<img src="images/NR_Add_Function_and_Template2.png" width="500">
-<img src="images/NR_Connect_Function_and_Template.png" width="500">
-
-5.4) Define Function to supply the Flight data
-
-'Double Click' on our created function node and update the function name to 'Add Flight Data'.
-In addition we have to supply sample flight data, a sample data set can be found here : [Sample Flight Data](https://raw.githubusercontent.com/chriwill/interconnect2016/master/flightstradeoffanalytics/data/flightdata.json).
-
-Copy the data set 'Command-C' and paste it into the function definition 'Command-V'.
+Our 'function' node will supply the application with sample flight data. For this 'double click' on our created function node and update the function name to 'Add Flight Data'. Next copy (⌘-C) the json content from this links
+ [Sample Flight Data in JSON](https://raw.githubusercontent.com/chriwill/interconnect2016/master/flightstradeoffanalytics/data/flightdata.json) to the function section (⌘-V).
 
 <img src="images/NR_Flight_Data_Edit_Function.png" width="400">
 <img src="images/NR_Flight_Data_Copy.png" width="400">
