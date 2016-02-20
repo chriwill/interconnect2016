@@ -6,11 +6,13 @@ In this session you will build a travel advisor application that helps to analyz
 
 <img src="images/Node_RED_Overview.png" align="middle" width="750" title="Overview">
 
-<b>1.) Create Node-RED Application on Bluemix</b>
+<b>Step 1) Sign up / Login to Bluemix - https://console.ng.bluemix.net/</b>
 
-<img src="images/Bluemix_Catalog_Node_RED.png"  width="450">
+<b>Step 2) Create Node-RED Application on Bluemix</b>
 
 Once you're logged in to your Bluemix account go to 'Catalog' and click on the 'Node-RED Starter Community' application. 
+
+<img src="images/Bluemix_Catalog_Node_RED.png"  width="450">
 
 On the right side of the screen you must give it a name, which must be unique. Then click 'Create'. Right now the Node-RED application is being created and deployed.
 
