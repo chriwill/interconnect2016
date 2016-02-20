@@ -97,11 +97,12 @@ Name Template 'Create Widget'
 
 5) Run Deploy
 
-<img src="images/NR_Deploy.png" width="200">
+<img src="images/NR_Deploy.png" width="150">
 
 6.) Run the application
 
-<img src="images/NR_Run_Application.png" width="200">
+<img src="images/NR_Run_Application.png" width="250">
 
+<img src="images/NR_Run_Application2.png" width="650">
 
 
