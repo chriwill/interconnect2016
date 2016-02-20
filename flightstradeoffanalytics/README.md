@@ -16,7 +16,7 @@ Once you're logged in to your Bluemix account go to 'Catalog' on top and click o
 
 On the right side of the screen you must give it a name, which must be unique. Then click 'Create'. Right now the Node-RED application is being created and deployed.
 
-<img src="images/Bluemix_Catalog_Node_RED_Create.png"  width="250">
+<img src="images/Bluemix_Catalog_Node_RED_Create.png"  width="650">
 
 Staging will take a few minutes.
 
@@ -26,11 +26,11 @@ Staging will take a few minutes.
 
 Once Node-RED application staging completed, go back to Catalog and search for 'Tradeoff Analytics' and click on the application icon.
 
-<img src="images/Bluemix_Catalog_Tradeoff_Analytics.png" width="450">
+<img src="images/Bluemix_Catalog_Tradeoff_Analytics.png" width="500">
 
 On the next page bind the service to our previously created Node-RED application and click 'Create'.
 
-<img src="images/Bluemix_Catalog_Tradeoff_Create.png" width="300">
+<img src="images/Bluemix_Catalog_Tradeoff_Create.png" width="650">
 
 Next it will ask to restage the application to use the newly added service, click on 'RESTAGE'.
 
