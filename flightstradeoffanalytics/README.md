@@ -20,7 +20,7 @@ On the right side of the screen you must give it a name, which must be unique. T
 
 Staging will take a few minutes.
 
-<img src="images/Bluemix_Staging_Node_RED.png" width="250">
+<img src="images/Bluemix_Staging_Node_RED.png" width="450">
 
 <b>2.) Add Service Watson Tradeoff Analytics</b>
 
@@ -111,13 +111,17 @@ This flow on flights/dilemmas will make some parameters adjustments through a ch
 <img src="images/NR_Edit_Change_Input.png" width="350">
 <img src="images/NR_Edit_Change_Output.png" width="350">
 
-<b>5.) Run Deploy</b>
+<b>6.) Deploy & Run your application</b>
+
+Click the 'Deploy' button on the top right section of the editor to deploy the application.
 
 <img src="images/NR_Deploy.png" width="150">
 
-<b>6.) Run the application</b>
+Now our application is ready to use.
 
-<img src="images/NR_Run_Application.png" width="250">
+Go to your browser and change url from the Node-RED application '/red/#' to '/flights'.
+
+<img src="images/NR_Run_Application.png" width="550">
 
 <img src="images/NR_Run_Application2.png" width="650">
 
