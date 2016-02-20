@@ -22,7 +22,7 @@ Staging will take a few minutes.
 
 <img src="images/Bluemix_Staging_Node_RED.png" width="450">
 
-<b>2.) Add Service Watson Tradeoff Analytics</b>
+<b>Step 3) Add Service Watson Tradeoff Analytics</b>
 
 Once Node-RED application staging completed, go back to Catalog and search for 'Tradeoff Analytics' and click on the application icon.
 
@@ -36,7 +36,7 @@ Next it will ask to restage the application to use the newly added service, clic
 
 <img src="images/Bluemix_Restage_Application.png" width="250">
 
-<b>3.) Start using Node-RED application</b>
+<b>Step 4) Start using Node-RED application</b>
 
 Once restaging is complete, click on the link to open the Node-RED application.
 
@@ -46,11 +46,11 @@ Click on 'Go to your Node-RED flow editor'.
 
 <img src="images/Node_RED_flow_editor.png" width="200">
 
-<b>4.) Trade-Off Analytics Widget flow construction</b>
+<b>Step 5) Trade-Off Analytics Widget flow construction</b>
 
 The flow to achieve this has two streams:
 
-4.1) User-interface serving stream
+5.1) User-interface serving stream
 
 Create Input - HTTP Request
 
@@ -59,18 +59,18 @@ Create Input - HTTP Request
 <img src="images/NR_Modify_Input1.png" width="250">
 <img src="images/NR_Modify_Input2.png" width="250">
 
-4.2) Create Output - HTTP Response
+5.2) Create Output - HTTP Response
 
 <img src="images/NR_Create_Output.png" width="700">
 
-4.3) Add Function & Template to first row
+5.3) Add Function & Template to first row
 
 <img src="images/NR_Add_Function_and_Template.png" width="150">
 
 <img src="images/NR_Add_Function_and_Template2.png" width="500">
 <img src="images/NR_Connect_Function_and_Template.png" width="500">
 
-4.4) Define Function to supply the Flight data
+5.4) Define Function to supply the Flight data
 
 'Double Click' on our created function node and update the function name to 'Add Flight Data'.
 In addition we have to supply sample flight data, a sample data set can be found here : [Sample Flight Data](https://raw.githubusercontent.com/chriwill/interconnect2016/master/flightstradeoffanalytics/data/flightdata.json).
@@ -81,7 +81,7 @@ Copy the data set 'Command-C' and paste it into the function definition 'Command
 <img src="images/NR_Flight_Data_Copy.png" width="400">
 
 
-4.5) Define Template with Tradeoff Analytics widget
+5.5) Define Template with Tradeoff Analytics widget
 
 Name Template 'Create Widget'
 [Widget HTML](https://raw.githubusercontent.com/chriwill/interconnect2016/master/flightstradeoffanalytics/data/widget.txt)
@@ -97,7 +97,7 @@ What the \<script> section does is to:
   - Once the data has come back from the dilemmas server, the widget shows the problem and triggers onTAShown(), which is used to resize the widget to fit.
 
 
-4.6) Edit Processing Row 
+5.6) Edit Processing Row 
 
 <img src="images/NR_Add_Change.png" width="100">
 <img src="images/NR_Add_Tradeoff.png" width="100">
@@ -111,7 +111,7 @@ This flow on flights/dilemmas will make some parameters adjustments through a ch
 <img src="images/NR_Edit_Change_Input.png" width="350">
 <img src="images/NR_Edit_Change_Output.png" width="350">
 
-<b>6.) Deploy & Run your application</b>
+<b>Step 6) Deploy & Run your application</b>
 
 Click the 'Deploy' button on the top right section of the editor to deploy the application.
 
