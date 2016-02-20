@@ -86,8 +86,7 @@ Name Template 'Create Widget'
 [Widget HTML](https://raw.githubusercontent.com/chriwill/interconnect2016/master/flightstradeoffanalytics/data/widget.txt)
 
 <img src="images/NR_Create_Widget.png" align="right" width="400">
-
-<div style="text-align:left;border:1px">
+<div style="text-align:left">
 What the \<script> section does is to:  
   - Include the widget's script located at "http://ta-cdn.mybluemix.net/v1/TradeoffAnalytics.js"
   - Start the widget initialization with the `loadTradeoffAnalytics()` call, triggered by `window.onload`.  
