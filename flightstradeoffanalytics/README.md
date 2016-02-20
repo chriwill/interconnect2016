@@ -105,10 +105,13 @@ Once done, connect all nodes as shown below.
 <img src="images/NR_Create_DI3.png" width="650">
 
 
-This flow on flights/dilemmas will make some parameters adjustments through a change node, setting subject, columns and options from the payload, storing the incoming problem for later use, and then calling the tradeoff analytics through its Node-RED service node. On return, another change node will adjust the returned payload parameters's problemand resolution to fit the format expected by the widget and return it as a JSON object.
+This flow on flights/dilemmas will make some parameters adjustments through a change node, setting subject, columns and options from the payload, storing the incoming problem for later use, and then calling the tradeoff analytics through its Node-RED service node. 
 
-<img src="images/NR_Edit_Change_Input.png" width="350">
-<img src="images/NR_Edit_Change_Output.png" width="350">
+<img src="images/NR_Create_DI4.png"  width="350">
+
+On return, another change node will adjust the returned payload parameters's problemand resolution to fit the format expected by the widget and return it as a JSON object.
+
+<img src="images/NR_Create_DI5.png"  width="350">
 
 <b>Step 8) Deploy & Run your application</b>
 
