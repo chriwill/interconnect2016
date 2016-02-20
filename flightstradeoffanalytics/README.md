@@ -105,11 +105,13 @@ Once done, connect all nodes as shown below.
 <img src="images/NR_Create_DI3.png" width="650">
 
 This flow on flights/dilemmas will make some parameters adjustments through a change node, setting subject, columns and options from the payload, storing the incoming problem for later use, and then calling the tradeoff analytics through its Node-RED service node. 
+
 'Double Click' on the left 'change' node, rename the node 'Get Data from Payload' and set the rules as shown below.
 
 <img src="images/NR_Create_DI4.png"  width="650">
 
 On return, another change node will adjust the returned payload parameters's problemand resolution to fit the format expected by the widget and return it as a JSON object.
+
 'Double Click' on the right 'change' node, rename the node 'Adjust Output for Widget' and set the rules as shown below.
 
 <img src="images/NR_Create_DI5.png"  width="650">
