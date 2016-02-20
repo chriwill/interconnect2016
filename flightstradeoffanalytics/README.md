@@ -85,7 +85,8 @@ What the \<script> section does is to:
   - On the TAReady event notification, we invoke `show(problem)`.  This will cause the widget to call-back on the server's `tofaw/dilemmas` URL with the problem for resolution.
   - Once the data has come back from the dilemmas server, the widget shows the problem and triggers onTAShown(), which is used to resize the widget to fit.
 
-Our User-interface serving stream is complete and it should look like this:
+
+The User-Interface stream is complete and it should look like this:
 
 <img src="images/NR_Create_UI4.png" width="650">
 
