@@ -51,7 +51,7 @@ Click on 'Go to your Node-RED flow editor'.
 Our application will have two streams. The first stream is the 'User-interface', which will create the widget and supply the flight data.
 The second stream will feed the watson service with the 'Dilemmas' and will return the results to the widget create with the first stream.
 
-<b>Step 6) Create User-interface serving stream</b>
+<b>Step 6) Create User-Interface Serving Stream</b>
 
 Ever flow needs one input 'http' and one output 'http response' node. One the left side filter by 'http' and drag and drop the http node from input section on the left and the http response node form output section on the right.
 
