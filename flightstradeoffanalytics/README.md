@@ -72,9 +72,7 @@ Our 'function' node will supply the application with sample flight data. For thi
 <img src="images/NR_Flight_Data_Edit_Function.png" width="430">
 <img src="images/NR_Flight_Data_Copy.png" width="400">
 
-
-
-5.5) Define Template with Tradeoff Analytics widget
+Next we have to create our UI To create our UI we Define Template with Tradeoff Analytics widget
 
 Name Template 'Create Widget'
 [Widget HTML](https://raw.githubusercontent.com/chriwill/interconnect2016/master/flightstradeoffanalytics/data/widget.txt)
@@ -90,7 +88,7 @@ What the \<script> section does is to:
   - Once the data has come back from the dilemmas server, the widget shows the problem and triggers onTAShown(), which is used to resize the widget to fit.
 
 
-5.6) Edit Processing Row 
+<b>7) Create Dilemmas Stream</b>
 
 <img src="images/NR_Add_Change.png" width="100">
 <img src="images/NR_Add_Tradeoff.png" width="100">
@@ -104,7 +102,7 @@ This flow on flights/dilemmas will make some parameters adjustments through a ch
 <img src="images/NR_Edit_Change_Input.png" width="350">
 <img src="images/NR_Edit_Change_Output.png" width="350">
 
-<b>Step 6) Deploy & Run your application</b>
+<b>Step 8) Deploy & Run your application</b>
 
 Click the 'Deploy' button on the top right section of the editor to deploy the application.
 
