@@ -53,7 +53,7 @@ The second stream will feed the watson service with the 'Dilemmas' and will retu
 
 <b>Step 6) Create User-interface serving stream</b>
 
-Ever flow needs one input 'http' and one output 'http response' node. One the left side filter by 'http' and drag and drop the http node from input section on the left and also get the http response node form output section.
+Ever flow needs one input 'http' and one output 'http response' node. One the left side filter by 'http' and drag and drop the http node from input section on the left and the http response node form output section on the right.
 
 <img src="images/NR_Create_UI1.png" width="650">
 
@@ -66,11 +66,12 @@ Once done, connect all nodes as shown below.
 
 <img src="images/NR_Create_UI3.png" width="650">
 
-Our 'function' node will supply the application with sample flight data. For this 'double click' on our created function node and update the function name to 'Add Flight Data'. Next copy (⌘-C) the json content from this links
+Our 'function' node will supply the application with sample flight data. For this 'double click' on our created function node and update the function name to 'Add Flight Data'. Next copy (⌘-A ⌘-C) the json content from this link
  [Sample Flight Data in JSON](https://raw.githubusercontent.com/chriwill/interconnect2016/master/flightstradeoffanalytics/data/flightdata.json) to the function section (⌘-V).
 
-<img src="images/NR_Flight_Data_Edit_Function.png" width="400">
+<img src="images/NR_Flight_Data_Edit_Function.png" width="430">
 <img src="images/NR_Flight_Data_Copy.png" width="400">
+
 
 
 5.5) Define Template with Tradeoff Analytics widget
