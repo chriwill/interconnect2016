@@ -88,9 +88,20 @@ Name Template 'Create Widget'
 
 <img src="images/NR_After_Tradeoff.png" width="600">
 
+<img src="images/NR_Edit_Change_Input.png" width="350">
+<img src="images/NR_Edit_Change_Output.png" width="350">
 
 4.7) Connect Last Row
 
 <img src="images/NR_Connect_Events_HTTP.png" width="400">
+
+5) Run Deploy
+
+<img src="images/NR_Deploy.png" width="200">
+
+6.) Run the application
+
+<img src="images/NR_Run_Application.png" width="200">
+
 
 
