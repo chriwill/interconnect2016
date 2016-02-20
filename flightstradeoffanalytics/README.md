@@ -44,24 +44,23 @@ Once restaging is complete, click on the link to open the Node-RED application.
 
 Click on 'Go to your Node-RED flow editor'.
 
-<img src="images/Node_RED_flow_editor.png" width="250">
+<img src="images/Node_RED_flow_editor.png" width="450">
 
-<b>Step 5) Trade-Off Analytics Widget flow construction</b>
+<b>Step 5) Create the application flow in Node-RED</b>
 
-The flow to achieve this has two streams:
+Our application will have two streams. The first stream is the 'User-interface', which will create the widget and supply the flight data.
+The second stream will feed the watson service with the 'Dilemmas' and will return the results to the widget create with the first stream.
 
-5.1) User-interface serving stream
+6) Create User-interface serving stream
 
-Create Input - HTTP Request
+Ever flow needs one input 'http' and one output 'http response' node. One the left side filter by 'http' and drag and drop the http node from input section on the left and also get the http response node form output section.
 
-<img src="images/NR_Create_Input.png" width="400">
+<img src="images/NR_Create_UI1.png" width="650">
 
-<img src="images/NR_Modify_Input1.png" width="250">
-<img src="images/NR_Modify_Input2.png" width="250">
+We need to give the input http node a url. 'Click' on the input 'http' node and enter the url '/flights'.
 
-5.2) Create Output - HTTP Response
+<img src="images/NR_Create_UI2.png" width="450">
 
-<img src="images/NR_Create_Output.png" width="700">
 
 5.3) Add Function & Template to first row
 
