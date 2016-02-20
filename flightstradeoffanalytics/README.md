@@ -40,11 +40,11 @@ Next it will ask to restage the application to use the newly added service, clic
 
 Once restaging is complete, click on the link to open the Node-RED application.
 
-<img src="images/Node_RED_is_running.png" width="300">
+<img src="images/Node_RED_is_running.png" width="500">
 
 Click on 'Go to your Node-RED flow editor'.
 
-<img src="images/Node_RED_flow_editor.png" width="200">
+<img src="images/Node_RED_flow_editor.png" width="250">
 
 <b>Step 5) Trade-Off Analytics Widget flow construction</b>
 
