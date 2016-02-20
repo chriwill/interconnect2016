@@ -8,6 +8,7 @@ In this session you will build a travel advisor application that helps to analyz
 
 <b>1.) Create Node-RED Application on Bluemix</b>
 
+<div style="text-align:left">
 Once you're logged in to your Bluemix account go to 'Catalog' and click on the 'Node-RED Starter Community' application. 
 </div>
 
