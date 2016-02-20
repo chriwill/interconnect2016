@@ -85,8 +85,9 @@ Copy the data set 'Command-C' and paste it into the function definition 'Command
 Name Template 'Create Widget'
 [Widget HTML](https://raw.githubusercontent.com/chriwill/interconnect2016/master/flightstradeoffanalytics/data/widget.txt)
 
-<img src="images/NR_Create_Widget.png" align="left" width="400">
+<img src="images/NR_Create_Widget.png" align="right" width="400">
 
+<div style="text-align:left;border:1px">
 What the \<script> section does is to:  
   - Include the widget's script located at "http://ta-cdn.mybluemix.net/v1/TradeoffAnalytics.js"
   - Start the widget initialization with the `loadTradeoffAnalytics()` call, triggered by `window.onload`.  
@@ -94,10 +95,11 @@ What the \<script> section does is to:
   - The `start()` method is called, which will asynchronously build the widget and pull its dependencies.
   - On the TAReady event notification, we invoke `show(problem)`.  This will cause the widget to call-back on the server's `tofaw/dilemmas` URL with the problem for resolution.
   - Once the data has come back from the dilemmas server, the widget shows the problem and triggers onTAShown(), which is used to resize the widget to fit.
+</div>
 
 
 
-<div style="text-align:center">
+
 
 4.6) Edit Processing Row 
 
