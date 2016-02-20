@@ -83,8 +83,7 @@ What the \<script> section does is to:
   - This invokes the constructor, with parameters to set the dilemmas and events callback URLs, and the id of the placeholder widget's \<div>.
   - The `start()` method is called, which will asynchronously build the widget and pull its dependencies.
   - On the TAReady event notification, we invoke `show(problem)`.  This will cause the widget to call-back on the server's `tofaw/dilemmas` URL with the problem for resolution.
-  - Once the data has come back from the dilemmas server, the widget shows the problem and triggers onTAShown(), which is used to resize the widget to fit.
-
+  - Once the data has come back from the dilemmas server, the widget shows the problem and triggers onTAShown(), which is used to resize the widget to fit.<br>
 
 The User-Interface stream is complete and it should look like this:
 
