@@ -108,8 +108,7 @@ Click the 'Deploy' button on the top right section of the editor to deploy the a
 
 <img src="images/NR_Deploy.png" width="150">
 
-Now our application is ready to use.
-
+Your application is ready to use.
 Go to your browser and change url from the Node-RED application '/red/#' to '/flights'.
 
 <img src="images/NR_Run_Application.png" width="550">
