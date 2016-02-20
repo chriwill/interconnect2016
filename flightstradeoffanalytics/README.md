@@ -65,9 +65,14 @@ Click on 'Go to your Node-RED flow editor'.
 
 4.4) Define Function to supply the Flight data
 
-Name function 'Add Flight Data'.
-Edit function node and replace function defintion with the flight data.
-[Sample Flight Data](https://raw.githubusercontent.com/chriwill/interconnect2016/master/flightstradeoffanalytics/data/flightdata.json)
+'Double Click' on our created function node and update the function name to 'Add Flight Data'.
+In addition we have to supply sample flight data, a sample data set can be found here : [Sample Flight Data](https://raw.githubusercontent.com/chriwill/interconnect2016/master/flightstradeoffanalytics/data/flightdata.json).
+
+Copy the data set 'Command-C' and paste it into the function definition 'Command-V'.
+
+<img src="images/NR_Flight_Data_Edit_Function.png" width="400">
+<img src="images/NR_Flight_Data_Copy.png" width="400">
+
 
 4.5) Define Template with Tradeoff Analytics widget
 
