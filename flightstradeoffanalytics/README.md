@@ -67,15 +67,13 @@ Once done, connect all nodes as shown below.
 <img src="images/NR_Create_UI3.png" width="650">
 
 Our 'function' node will supply the application with sample flight data. For this 'double click' on our created function node and update the function name to 'Add Flight Data'. Next copy (⌘-A ⌘-C) the json content from this link
- [Sample Flight Data in JSON](https://raw.githubusercontent.com/chriwill/interconnect2016/master/flightstradeoffanalytics/data/flightdata.json) to the function section (⌘-V).
+ [Sample Flight Data in JSON](https://raw.githubusercontent.com/chriwill/interconnect2016/master/flightstradeoffanalytics/data/flightdata.json) and paste it into the function section (⌘-V) as shown below.
 
 <img src="images/NR_Flight_Data_Edit_Function.png" width="430">
 <img src="images/NR_Flight_Data_Copy.png" width="400">
 
-Next we have to create our UI To create our UI we Define Template with Tradeoff Analytics widget
-
-Name Template 'Create Widget'
-[Widget HTML](https://raw.githubusercontent.com/chriwill/interconnect2016/master/flightstradeoffanalytics/data/widget.txt)
+Our 'template' node will define the User Interface of our application. For this 'double click' on the template node and give it a name 'Create Widget'. Next copy  (⌘-A ⌘-C) the raw HTML content from this link
+[Widget HTML](https://raw.githubusercontent.com/chriwill/interconnect2016/master/flightstradeoffanalytics/data/widget.txt) and paste it into the template section (⌘-V) as shown below.
 
 <img src="images/NR_Create_Widget.png" align="right" width="400">
 
@@ -87,8 +85,11 @@ What the \<script> section does is to:
   - On the TAReady event notification, we invoke `show(problem)`.  This will cause the widget to call-back on the server's `tofaw/dilemmas` URL with the problem for resolution.
   - Once the data has come back from the dilemmas server, the widget shows the problem and triggers onTAShown(), which is used to resize the widget to fit.
 
+Our User-interface serving stream is complete and it should look like this:
 
-<b>7) Create Dilemmas Stream</b>
+<img src="images/NR_Create_UI4.png" width="650">
+
+<b>7) Create Dilemmas Processing Stream</b>
 
 <img src="images/NR_Add_Change.png" width="100">
 <img src="images/NR_Add_Tradeoff.png" width="100">
@@ -109,6 +110,7 @@ Click the 'Deploy' button on the top right section of the editor to deploy the a
 <img src="images/NR_Deploy.png" width="150">
 
 Your application is ready to use.
+
 Go to your browser and change url from the Node-RED application '/red/#' to '/flights'.
 
 <img src="images/NR_Run_Application.png" width="550">
