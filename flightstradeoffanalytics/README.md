@@ -79,6 +79,8 @@ Copy the data set 'Command-C' and paste it into the function definition 'Command
 Name Template 'Create Widget'
 [Widget HTML](https://raw.githubusercontent.com/chriwill/interconnect2016/master/flightstradeoffanalytics/data/widget.txt)
 
+<img src="images/NR_Create_Widget.png" width="400">
+
 4.6) Next Row - Feed 
 
 
