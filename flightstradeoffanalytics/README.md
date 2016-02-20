@@ -91,12 +91,19 @@ Our User-interface serving stream is complete and it should look like this:
 
 <b>7) Create Dilemmas Processing Stream</b>
 
-<img src="images/NR_Add_Change.png" width="100">
-<img src="images/NR_Add_Tradeoff.png" width="100">
+The Dilemmas Processing Stream needs one input 'http' and one output 'http response' node. One the left side filter by 'http' and drag and drop the http node from input section on the left and the http response node form output section on the right.
 
-<img src="images/NR_After_Tradeoff.png" width="600">
+<img src="images/NR_Create_DI1.png" width="650">
 
-Dilemmas serving stream
+We need to give the input http node a url and change it's method. 'Click' on the input 'http' node and enter the url '/flights/dilemmas' and set the method to 'POST' as shown bellow.
+
+<img src="images/NR_Create_DI2.png" width="650">
+
+Next we will add the Watson 'tradeoff analytics' node and two 'change' function nodes. One the left side filter by 'tradeoff' and drag and drop the http node from input section on the left and the http response node form output section on the right. Do the same and add two 'change' nodes.
+Once done, connect all nodes as shown below.
+
+<img src="images/NR_Create_DI3.png" width="650">
+
 
 This flow on flights/dilemmas will make some parameters adjustments through a change node, setting subject, columns and options from the payload, storing the incoming problem for later use, and then calling the tradeoff analytics through its Node-RED service node. On return, another change node will adjust the returned payload parameters's problemand resolution to fit the format expected by the widget and return it as a JSON object.
 
