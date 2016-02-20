@@ -130,7 +130,7 @@ Click the 'Deploy' button on the top right section of the editor to deploy the a
 
 Your application is ready to use.
 
-Go to your browser and change url from the Node-RED application '/red/#' to '/flights'.
+Go to your browser and change the URL from the Node-RED application '/red/#' to '/flights'.
 
 <img src="images/NR_Run_Application.png" width="550">
 
