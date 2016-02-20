@@ -2,11 +2,11 @@
 
 In this session you will build a travel advisor application that helps to analyze flight data and pick the best flight option based on individual preferences.
 
-<b>Overview:
+<b>Overview:</b>
 
 <img src="images/Node_RED_Overview.png" align="middle" width="750" title="Overview">
 
-<b>1.) Create Node-RED Application on Bluemix
+<b>1.) Create Node-RED Application on Bluemix</b>
 
 Once you're logged in to your Bluemix account go to 'Catalog' and click on the 'Node-RED Starter Community' application. 
 
@@ -20,7 +20,7 @@ Staging will take a few minutes.
 
 <img src="images/Bluemix_Staging_Node_RED.png" width="250">
 
-<b>2.) Add Service Watson Tradeoff Analytics
+<b>2.) Add Service Watson Tradeoff Analytics</b>
 
 Once Node-RED application staging completed, go back to Catalog and search for 'Tradeoff Analytics' and click on the application icon.
 
@@ -34,7 +34,7 @@ Next it will ask to restage the application to use the newly added service, clic
 
 <img src="images/Bluemix_Restage_Application.png" width="250">
 
-<b>3.) Start using Node-RED application
+<b>3.) Start using Node-RED application</b>
 
 Once restaging is complete, click on the link to open the Node-RED application.
 
@@ -44,7 +44,7 @@ Click on 'Go to your Node-RED flow editor'.
 
 <img src="images/Node_RED_flow_editor.png" width="200">
 
-<b>4.) Create Application Flow
+<b>4.) Create Application Flow</b>
 
 4.1) Create Input - HTTP Request
 
@@ -97,11 +97,11 @@ Name Template 'Create Widget'
 
 <img src="images/NR_Connect_Events_HTTP.png" width="400">
 
-<b>5.) Run Deploy
+<b>5.) Run Deploy</b>
 
 <img src="images/NR_Deploy.png" width="150">
 
-<b>6.) Run the application
+<b>6.) Run the application</b>
 
 <img src="images/NR_Run_Application.png" width="250">
 
