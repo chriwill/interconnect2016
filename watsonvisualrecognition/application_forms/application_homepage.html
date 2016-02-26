@@ -1,0 +1,80 @@
+<html>
+<head></head>
+<body style="margin: 0px">
+
+	<div class="navbar navbar-default navbar-fixed-top"
+		style="background-color: #00b4a0; font-size: 16px; min-height: 53px; margin-bottom: 30px; border: none;"
+		role="navigation">
+		<div
+			style="padding-left: 21px; padding-right: 21px; margin-right: auto; margin-left: auto; font-family:">
+			<div class="navbar-header"
+				style="font-family: &amp; quot;Helvetica Neue&amp;quot;,Arial,sans-serif;"">
+				<div class="navbar-brand"
+					style="font-size: 23px; font-weight: 700; align-items: center; color: white; padding: 15px 14px 15px 127px;">InterConnect
+					2016 Watson Visual Recognition Demo</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="container"
+		style="padding-right: 15px; padding-left: 15px; margin-right: auto; margin-left: auto; width: 1170px">
+
+		<!-- Main component for a primary marketing message or call to action -->
+		<div class="jumbotron"
+			style="padding-right: 60px; padding-left: 60px; border-radius: 6px; padding-top: 48px; padding-bottom: 48px; margin-bottom: 35px; color: inherit; background-color: #eee;">
+
+			<div class="_demo--container">
+
+				<div class="banner--service-info">
+					<div style="display: flex;">
+						<svg id="Layer_1" width="100" height="100" viewBox="-913 -139 1000 1000"><style>.st0{fill:#41D6C3;} .st1{fill:#FFFFFF;} .st2{fill:#006D5D;} .st3{clip-path:url(#SVGID_2_);fill:#005448;}</style><circle class="st0" cx="-413" cy="361" r="500"></circle><path class="st1" d="M-608.3 110.7v532.9H-76V110.7h-532.3zm20.7 20.7H-96v409.4h-491.6V131.4z"></path><path class="st1" d="M-280.4 397.9L-424 254.3l-102.2 102.2v122.9h368.7v-81.5l-61.5-61.5z"></path><circle class="st1" cx="-198.9" cy="233.6" r="40.8"></circle><circle class="st2" cx="-565" cy="231.6" r="224.5"></circle><defs><circle id="SVGID_1_" cx="-565" cy="231.6" r="224.5"></circle></defs><clipPath id="SVGID_2_"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#SVGID_1_" overflow="visible"></use></clipPath><path class="st3" d="M-279.8 363.6l-202.4-202.5L-626.5 306v173.4h520.7V363.6l-87.3-86.7z"></path><path class="st1" d="M-691.1 315.7h122.9V361h-122.9zM-691.1 212.2h122.9v45.3h-122.9zM-691.1 108.7h122.9V154h-122.9zM-529.4 108.7h25.9V361h-25.9z"></path><path class="st1" d="M-523 218.7h77.6v25.9H-523z"></path></svg>
+  
+						<div
+							style="color: #325c80; font-size: 3em; font-weight: bold; margin: 25px 25px 25px 25px;">Visual
+							Recognition</div>
+					</div>
+					<div class="banner--service-description"
+						style="margin-top: 20px; font-size: 1.2em;"">Visual
+						Recognition allows you to derive insights from an image based on
+						its visual content. You can organize image libraries, understand
+						an individual image, and create custom classifiers for specific
+						results that are tailored to your needs.</div>
+				</div>
+			</div>
+
+			<h2>Select an image URL</h2>
+			<form action="/imagerecognition">
+				<img
+					src="https://raw.githubusercontent.com/zankhanapathak/watson-visual-recognition-app/master/images/TajMahal.jpg"
+					height="100" style="width: 145;"> <img
+					src="https://raw.githubusercontent.com/zankhanapathak/watson-visual-recognition-app/master/images/eiffel-tower.jpg"
+					height="100" style="width: 145;"> <img
+					src="https://raw.githubusercontent.com/zankhanapathak/watson-visual-recognition-app/master/images/golden-gate-sanfrancisco.jpg"
+					height="100" style="width: 145;"> <img
+					src="https://raw.githubusercontent.com/zankhanapathak/watson-visual-recognition-app/master/images/statue-of-liberty.jpg"
+					height="100" style="width: 145;"> <img
+					src="https://raw.githubusercontent.com/zankhanapathak/watson-visual-recognition-app/master/images/grandcanyon.jpeg"
+					height="100" style="width: 145;"> <img
+					src="https://raw.githubusercontent.com/zankhanapathak/watson-visual-recognition-app/master/images/Oblique-Tower-of-Pisa.jpeg"
+					height="100" style="width: 145;"> <img
+					src="https://raw.githubusercontent.com/zankhanapathak/watson-visual-recognition-app/master/images/chichen-itza.jpeg"
+					height="100" style="width: 145;"> <br>
+				<br>
+				<br>
+				<div style="display: -webkit-inline-box; height: 30px;">
+					<div style="font-size: 1.2em; margin-top: 2px; margin-bottom: 2px;">Copy
+						above image location URL or enter any image URL:</div>
+
+					<input type="text" name="imageurl"
+						style="width: 400; font-size: 1.2em; margin-left: 5px; margin-right: 5px;">
+					<input type="submit"
+						style="padding: 8px 45px; font-size: 17px; line-height: 1em; border-radius: 6px; color: #ffffff; background-color: #1abc9c; border: none;"
+						value="Analyze">
+				</div>
+			</form>
+		</div>
+
+	</div>
+</body>
+</html>

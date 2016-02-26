@@ -1,0 +1,104 @@
+[{
+	"id": "3f6b96f0.c0946a",
+	"type": "http in",
+	"z": "58a2e80c.a75d18",
+	"name": "",
+	"url": "/imagerecognition",
+	"method": "get",
+	"swaggerDoc": "",
+	"x": 125,
+	"y": 90,
+	"wires": [
+		["fd34e11d.02cb2"]
+	]
+}, {
+	"id": "bf810e4.f407ef",
+	"type": "http response",
+	"z": "58a2e80c.a75d18",
+	"name": "HTTP Response",
+	"x": 1036,
+	"y": 89,
+	"wires": []
+}, {
+	"id": "fd34e11d.02cb2",
+	"type": "switch",
+	"z": "58a2e80c.a75d18",
+	"name": "Check Image Paramter",
+	"property": "payload.imageurl",
+	"propertyType": "msg",
+	"rules": [{
+		"t": "null"
+	}, {
+		"t": "else"
+	}],
+	"checkall": "false",
+	"outputs": 2,
+	"x": 392.5,
+	"y": 91,
+	"wires": [
+		["d880230f.277fe"],
+		["254335cc.dabcca"]
+	]
+}, {
+	"id": "254335cc.dabcca",
+	"type": "change",
+	"z": "58a2e80c.a75d18",
+	"name": "Extract Image URL",
+	"rules": [{
+		"t": "set",
+		"p": "payload",
+		"pt": "msg",
+		"to": "payload.imageurl",
+		"tot": "msg"
+	}],
+	"action": "",
+	"property": "",
+	"from": "",
+	"to": "",
+	"reg": false,
+	"x": 515.5,
+	"y": 206,
+	"wires": [
+		["7bb8874c.844778"]
+	]
+}, {
+	"id": "d880230f.277fe",
+	"type": "template",
+	"z": "58a2e80c.a75d18",
+	"name": "Create Application Homepage",
+	"field": "payload",
+	"fieldType": "msg",
+	"format": "html",
+	"syntax": "mustache",
+	"template": "<html>\n<head></head>\n<body style=\"margin: 0px\">\n\n\t<div class=\"navbar navbar-default navbar-fixed-top\"\n\t\tstyle=\"background-color: #00b4a0; font-size: 16px; min-height: 53px; margin-bottom: 30px; border: none;\"\n\t\trole=\"navigation\">\n\t\t<div\n\t\t\tstyle=\"padding-left: 21px; padding-right: 21px; margin-right: auto; margin-left: auto; font-family:\">\n\t\t\t<div class=\"navbar-header\"\n\t\t\t\tstyle=\"font-family: &amp; quot;Helvetica Neue&amp;quot;,Arial,sans-serif;\"\">\n\t\t\t\t<div class=\"navbar-brand\"\n\t\t\t\t\tstyle=\"font-size: 23px; font-weight: 700; align-items: center; color: white; padding: 15px 14px 15px 127px;\">InterConnect\n\t\t\t\t\t2016 Watson Visual Recognition Demo</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n\n\n\t<div class=\"container\"\n\t\tstyle=\"padding-right: 15px; padding-left: 15px; margin-right: auto; margin-left: auto; width: 1170px\">\n\n\t\t<!-- Main component for a primary marketing message or call to action -->\n\t\t<div class=\"jumbotron\"\n\t\t\tstyle=\"padding-right: 60px; padding-left: 60px; border-radius: 6px; padding-top: 48px; padding-bottom: 48px; margin-bottom: 35px; color: inherit; background-color: #eee;\">\n\n\t\t\t<div class=\"_demo--container\">\n\n\t\t\t\t<div class=\"banner--service-info\">\n\t\t\t\t\t<div style=\"display: flex;\">\n\t\t\t\t\t\t<svg id=\"Layer_1\" width=\"100\" height=\"100\" viewBox=\"-913 -139 1000 1000\"><style>.st0{fill:#41D6C3;} .st1{fill:#FFFFFF;} .st2{fill:#006D5D;} .st3{clip-path:url(#SVGID_2_);fill:#005448;}</style><circle class=\"st0\" cx=\"-413\" cy=\"361\" r=\"500\"></circle><path class=\"st1\" d=\"M-608.3 110.7v532.9H-76V110.7h-532.3zm20.7 20.7H-96v409.4h-491.6V131.4z\"></path><path class=\"st1\" d=\"M-280.4 397.9L-424 254.3l-102.2 102.2v122.9h368.7v-81.5l-61.5-61.5z\"></path><circle class=\"st1\" cx=\"-198.9\" cy=\"233.6\" r=\"40.8\"></circle><circle class=\"st2\" cx=\"-565\" cy=\"231.6\" r=\"224.5\"></circle><defs><circle id=\"SVGID_1_\" cx=\"-565\" cy=\"231.6\" r=\"224.5\"></circle></defs><clipPath id=\"SVGID_2_\"><use xmlns:xlink=\"http://www.w3.org/1999/xlink\" xlink:href=\"#SVGID_1_\" overflow=\"visible\"></use></clipPath><path class=\"st3\" d=\"M-279.8 363.6l-202.4-202.5L-626.5 306v173.4h520.7V363.6l-87.3-86.7z\"></path><path class=\"st1\" d=\"M-691.1 315.7h122.9V361h-122.9zM-691.1 212.2h122.9v45.3h-122.9zM-691.1 108.7h122.9V154h-122.9zM-529.4 108.7h25.9V361h-25.9z\"></path><path class=\"st1\" d=\"M-523 218.7h77.6v25.9H-523z\"></path></svg>\n  \n\t\t\t\t\t\t<div\n\t\t\t\t\t\t\tstyle=\"color: #325c80; font-size: 3em; font-weight: bold; margin: 25px 25px 25px 25px;\">Visual\n\t\t\t\t\t\t\tRecognition</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"banner--service-description\"\n\t\t\t\t\t\tstyle=\"margin-top: 20px; font-size: 1.2em;\"\">Visual\n\t\t\t\t\t\tRecognition allows you to derive insights from an image based on\n\t\t\t\t\t\tits visual content. You can organize image libraries, understand\n\t\t\t\t\t\tan individual image, and create custom classifiers for specific\n\t\t\t\t\t\tresults that are tailored to your needs.</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\n\t\t\t<h2>Select an image URL</h2>\n\t\t\t<form action=\"/imagerecognition\">\n\t\t\t\t<img\n\t\t\t\t\tsrc=\"https://raw.githubusercontent.com/zankhanapathak/watson-visual-recognition-app/master/images/TajMahal.jpg\"\n\t\t\t\t\theight=\"100\" style=\"width: 145;\"> <img\n\t\t\t\t\tsrc=\"https://raw.githubusercontent.com/zankhanapathak/watson-visual-recognition-app/master/images/eiffel-tower.jpg\"\n\t\t\t\t\theight=\"100\" style=\"width: 145;\"> <img\n\t\t\t\t\tsrc=\"https://raw.githubusercontent.com/zankhanapathak/watson-visual-recognition-app/master/images/golden-gate-sanfrancisco.jpg\"\n\t\t\t\t\theight=\"100\" style=\"width: 145;\"> <img\n\t\t\t\t\tsrc=\"https://raw.githubusercontent.com/zankhanapathak/watson-visual-recognition-app/master/images/statue-of-liberty.jpg\"\n\t\t\t\t\theight=\"100\" style=\"width: 145;\"> <img\n\t\t\t\t\tsrc=\"https://raw.githubusercontent.com/zankhanapathak/watson-visual-recognition-app/master/images/white-house.jpeg\"\n\t\t\t\t\theight=\"100\" style=\"width: 145;\"> <img\n\t\t\t\t\tsrc=\"https://raw.githubusercontent.com/zankhanapathak/watson-visual-recognition-app/master/images/pyramid.jpeg\"\n\t\t\t\t\theight=\"100\" style=\"width: 145;\"> <img\n\t\t\t\t\tsrc=\"https://raw.githubusercontent.com/zankhanapathak/watson-visual-recognition-app/master/images/pagoda.jpg\"\n\t\t\t\t\theight=\"100\" style=\"width: 145;\"> <br>\n\t\t\t\t<br>\n\t\t\t\t<br>\n\t\t\t\t<div style=\"display: -webkit-inline-box; height: 30px;\">\n\t\t\t\t\t<div style=\"font-size: 1.2em; margin-top: 2px; margin-bottom: 2px;\">Copy\n\t\t\t\t\t\tabove image location URL or enter any image URL:</div>\n\n\t\t\t\t\t<input type=\"text\" name=\"imageurl\"\n\t\t\t\t\t\tstyle=\"width: 420px; font-size: 1em; margin-left: 5px; margin-right: 5px;\">\n\t\t\t\t\t<input type=\"submit\"\n\t\t\t\t\t\tstyle=\"padding: 8px 45px; font-size: 17px; line-height: 1em; border-radius: 6px; color: #ffffff; background-color: #1abc9c; border: none;\"\n\t\t\t\t\t\tvalue=\"Analyze\">\n\t\t\t\t</div>\n\t\t\t</form>\n\t\t</div>\n\n\t</div>\n</body>\n</html>",
+	"x": 739.5,
+	"y": 89,
+	"wires": [
+		["bf810e4.f407ef"]
+	]
+}, {
+	"id": "b01596a4.4fea68",
+	"type": "template",
+	"z": "58a2e80c.a75d18",
+	"name": "Generate Report",
+	"field": "payload",
+	"fieldType": "msg",
+	"format": "html",
+	"syntax": "mustache",
+	"template": "<html>\n<head></head>\n<body style=\"margin: 0px\">\n\n\t<div class=\"navbar navbar-default navbar-fixed-top\"\n\t\tstyle=\"background-color: #00b4a0; font-size: 16px; min-height: 53px; margin-bottom: 30px; border: none;\"\n\t\trole=\"navigation\">\n\t\t<div\n\t\t\tstyle=\"padding-left: 21px; padding-right: 21px; margin-right: auto; margin-left: auto; font-family:\">\n\t\t\t<div class=\"navbar-header\" style=\"font-family: &amp; amp;\"\">\n\t\t\t\t<div class=\"navbar-brand\"\n\t\t\t\t\tstyle=\"font-size: 23px; font-weight: 700; align-items: center; color: white; padding: 15px 14px 15px 127px;\">InterConnect\n\t\t\t\t\t2016 Watson Visual Recognition Demo</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n\n\n\t<div class=\"container\"\n\t\tstyle=\"padding-right: 15px; padding-left: 15px; margin-right: auto; margin-left: auto; width: 1170px\">\n\n\t\t<!-- Main component for a primary marketing message or call to action -->\n\t\t<div class=\"jumbotron\"\n\t\t\tstyle=\"padding-right: 60px; padding-left: 60px; border-radius: 6px; padding-top: 48px; padding-bottom: 48px; margin-bottom: 35px; color: inherit; background-color: #eee;\">\n\n\t\t\t<div class=\"_demo--container\">\n\n\t\t\t\t<div class=\"banner--service-info\">\n\t\t\t\t\t<div style=\"display: flex;\">\n\t\t\t\t\t\t<svg id=\"Layer_1\" width=\"100\" height=\"100\" viewBox=\"-913 -139 1000 1000\"><style>.st0{fill:#41D6C3;} .st1{fill:#FFFFFF;} .st2{fill:#006D5D;} .st3{clip-path:url(#SVGID_2_);fill:#005448;}</style><circle class=\"st0\" cx=\"-413\" cy=\"361\" r=\"500\"></circle><path class=\"st1\" d=\"M-608.3 110.7v532.9H-76V110.7h-532.3zm20.7 20.7H-96v409.4h-491.6V131.4z\"></path><path class=\"st1\" d=\"M-280.4 397.9L-424 254.3l-102.2 102.2v122.9h368.7v-81.5l-61.5-61.5z\"></path><circle class=\"st1\" cx=\"-198.9\" cy=\"233.6\" r=\"40.8\"></circle><circle class=\"st2\" cx=\"-565\" cy=\"231.6\" r=\"224.5\"></circle><defs><circle id=\"SVGID_1_\" cx=\"-565\" cy=\"231.6\" r=\"224.5\"></circle></defs><clipPath id=\"SVGID_2_\"><use xmlns:xlink=\"http://www.w3.org/1999/xlink\" xlink:href=\"#SVGID_1_\" overflow=\"visible\"></use></clipPath><path class=\"st3\" d=\"M-279.8 363.6l-202.4-202.5L-626.5 306v173.4h520.7V363.6l-87.3-86.7z\"></path><path class=\"st1\" d=\"M-691.1 315.7h122.9V361h-122.9zM-691.1 212.2h122.9v45.3h-122.9zM-691.1 108.7h122.9V154h-122.9zM-529.4 108.7h25.9V361h-25.9z\"></path><path class=\"st1\" d=\"M-523 218.7h77.6v25.9H-523z\"></path></svg>\n\t\t\t\t\t\t<div\n\t\t\t\t\t\t\tstyle=\"color: #325c80; font-size: 3em; font-weight: bold; margin: 25px 25px 25px 25px;\">Visual\n\t\t\t\t\t\t\tRecognition</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"banner--service-description\"\n\t\t\t\t\t\tstyle=\"margin-top: 20px; font-size: 1.2em;\"\">Visual\n\t\t\t\t\t\tRecognition allows you to derive insights from an image based on\n\t\t\t\t\t\tits visual content. You can organize image libraries, understand\n\t\t\t\t\t\tan individual image, and create custom classifiers for specific\n\t\t\t\t\t\tresults that are tailored to your needs.</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\n\t\t\t<h2>Node-RED Watson Visual Recognition output</h2>\n\t\t\t\n\t\t\t<p>Analyzed image: {{payload}}</p>\n\n\t\t\t<img src=\"{{payload}}\" height='100' />\n\t\t\t</br>\n\n\t\t\t<form action=\"{{req._parsedUrl.pathname}}\">\n\t\t\t\t<input\n\t\t\t\t\tstyle=\"padding: 8px 45px; font-size: 17px; line-height: 1em; border-radius: 6px; color: #ffffff; background-color: #1abc9c; border: none;\"\n\t\t\t\t\ttype=\"submit\" value=\"Try again\" />\n\t\t\t</form>\n\t\t\t<table border='1'>\n\t\t\t\t<thead>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<th>Name</th>\n\t\t\t\t\t\t<th>Score</th>\n\t\t\t\t\t</tr>\n\t\t\t\t</thead>\n\t\t\t\t{{#labels}}\n\t\t\t\t<tr>\n\t\t\t\t\t<td><b>{{label_name}}</b></td>\n\t\t\t\t\t<td><i>{{label_score}}</i></td>\n\t\t\t\t</tr>\n\t\t\t\t{{/labels}}\n\t\t\t</table>\n\t\t\t<p>{{msg}}</p>\n\t\t</div>\n\n\t</div>\n</body>\n</html>",
+	"x": 968.5,
+	"y": 209,
+	"wires": [
+		["bf810e4.f407ef"]
+	]
+}, {
+	"id": "7bb8874c.844778",
+	"type": "watson-visual-recognition",
+	"z": "58a2e80c.a75d18",
+	"name": "",
+	"x": 741.5,
+	"y": 208,
+	"wires": [
+		["b01596a4.4fea68"]
+	]
+}]
