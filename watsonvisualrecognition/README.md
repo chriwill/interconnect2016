@@ -129,7 +129,7 @@ Configure it to parse and pass imageurl from the payload object
 Configure one of the template node which Creates Application Homepage - 
 
 Change the Syntax Highlight to  - HTML from the dropdown on the left
-Copy the raw html content from this same data to the template section [Sample HTML Form Content](https://raw.githubusercontent.com/zankhanapathak/watson-visual-recognition-app/master/application_forms/application_homepage.html).
+Copy the raw html content from this same data to the template section [Sample HTML Form Content](application_forms/application_homepage.html).
 
 <img src="images/appflow-step9.png" height="550" width ="650" align="center">
 
