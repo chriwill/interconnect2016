@@ -158,7 +158,7 @@ Click the 'Deploy' button on the top right section of the editor to deploy the a
 
 6.8)  -  Configure the remaining 'template' node to generate reports - This template node get the result from the 'Visual recognition' node and sends the ouput to the 'HTTP Response' node
 
-Copy the raw html content from this same data to the template section [Sample HTML Form Content](watsonvisualrecognition/application_forms/report_form.html).
+Copy the raw html content from this same data to the template section [Sample HTML Form Content](application_forms/report_form.html).
 
 <img src="images/appflow-step13.png" height="550" width ="500" align="center">
 
@@ -185,7 +185,7 @@ Your application is ready to use!!!
 
 <b>Appendix) Application flow file</b>
 
-You can download the complete flow file [here](watsonvisualrecognition/application_forms/visualapp_node_red_export.json)  and import it into your Node-RED instance.
+You can download the complete flow file [here](application_forms/visualapp_node_red_export.json)  and import it into your Node-RED instance.
 
 <img src="images/NR_Import1.png" align="top" height="250" width="300">
 <img src="images/NR_Import2.png" align="top" height="250" width="400">
