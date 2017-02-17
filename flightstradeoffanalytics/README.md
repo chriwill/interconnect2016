@@ -67,13 +67,13 @@ Once done, connect all nodes as shown below.
 <img src="images/NR_Create_UI3.png" width="650">
 
 Our 'function' node will supply the application with sample flight data. For this 'double click' on our created function node and update the function name to 'Add Flight Data'. Next copy (⌘-A ⌘-C) the json content from this link
- [Sample Flight Data in JSON](https://raw.githubusercontent.com/chriwill/interconnect2016/master/flightstradeoffanalytics/data/flightdata.json) and paste it into the function section (⌘-V) as shown below.
+ [Sample Flight Data in JSON](https://raw.githubusercontent.com/chriwill/interconnect2017/master/flightstradeoffanalytics/data/flightdata.json) and paste it into the function section (⌘-V) as shown below.
 
 <img src="images/NR_Flight_Data_Edit_Function.png" width="430">
 <img src="images/NR_Flight_Data_Copy.png" width="400">
 
 Our 'template' node will define the User Interface of our application. For this 'double click' on the template node and give it a name 'Create Widget'. Next copy  (⌘-A ⌘-C) the raw HTML content from this link
-[Widget HTML](https://raw.githubusercontent.com/chriwill/interconnect2016/master/flightstradeoffanalytics/data/widget.txt) and paste it into the template section (⌘-V) as shown below.
+[Widget HTML](https://raw.githubusercontent.com/chriwill/interconnect2017/master/flightstradeoffanalytics/data/widget.txt) and paste it into the template section (⌘-V) as shown below.
 
 <img src="images/NR_Create_Widget.png" align="right" width="400">
 
@@ -137,7 +137,7 @@ Go to your browser and change the URL from the Node-RED application '/red' to '/
 
 <b>Appendix) Application flow file</b>
 
-You can download the complete flow file [here](https://raw.githubusercontent.com/chriwill/interconnect2016/master/flightstradeoffanalytics/data/node_red_export.json)  and import it into your Node-RED instance.
+You can download the complete flow file [here](https://raw.githubusercontent.com/chriwill/interconnect2017/master/flightstradeoffanalytics/data/node_red_export.json)  and import it into your Node-RED instance.
 
 <img src="images/NR_Import1.png" align="top" width="250">
 <img src="images/NR_Import2.png" align="top" width="300">
